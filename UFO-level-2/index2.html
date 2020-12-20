@@ -15,7 +15,10 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header ">
-        <a class="navbar-brand" href="index2.html">UFO Sightings
+        <a class="navbar-brand" href="../UFO-level-1/index.html">UFO Sightings Level 1
+          <img class="nav-ufo" src="static/images/ufo.svg">
+        </a>
+        <a class="navbar-brand" href="index2.html">UFO Sightings Level 2
           <img class="nav-ufo" src="static/images/ufo.svg">
         </a>
       </div>
@@ -30,12 +33,36 @@
     <h2>Table Filters:</h1>
     <div class="row">
       <div class="col-md-3">
-        <form id="form">
+        <form id="form_date">
           <div class="form-group">
-            <label for="example-form">Enter a Date</label>
-            <input class="form-control" id="example-form-input" name="example-form" type="text" placeholder="1/1/2010">
+            <label for="example-form">Enter a Date (dd/mm/yyyy)</label>
+            <select class="form-control" id="date_arr"  type="text" placeholder="date"></select>
           </div>
           <button id="button" type="button" class="btn btn-default">Apply Filters</button>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <form id="form_state">
+          <div class="form-group">
+            <label for="state">Enter a State id</label>
+            <select class="form-control" id="state_arr"  type="text" placeholder="state"></select>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <form id="form_country">
+          <div class="form-group">
+            <label for="example-form">Enter a Country</label>
+            <select class="form-control" id="country_arr"  type="text" placeholder="country"></select>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <form id="form_shape">
+          <div class="form-group">
+            <label for="example-form">Enter a Shape</label>
+            <select class="form-control" id="shape_arr" type="text" placeholder="shape"></select>
+          </div>
         </form>
       </div>
     </div>
