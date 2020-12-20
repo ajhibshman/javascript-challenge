@@ -1,7 +1,4 @@
-* {
-  box-sizing: border-box;
-  font-family: Ubuntu, sans-serif;
-}
+
 
 html,
 body {
@@ -10,33 +7,17 @@ body {
   margin: 0;
 }
 
-/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
-.wrapper {
-  position: relative;
-  min-height: 100%;
-  padding-bottom: 130px;
-  overflow: auto;
+.viz {
+  background-image: url('../images/P1090879.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-attachment: fixed ;
+  background-size: cover;
 }
 
-/* The footer is positioned at the bottom of the page */
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  min-height: 100px;
-  background: #4e5d6c;
-}
 
-/* The code styles the text at the bottom of the footer */
-.footer > .bottom {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 5px;
-  background: #1b3146;
-}
+
+
 
 .navbar {
   padding: 5px;
@@ -46,10 +27,10 @@ body {
 /* This CSS styles the ufo icon in the navbar */
 .nav-ufo {
   position: absolute;
-  bottom: 5px;
-  left: 150px;
-  width: 35px;
-  color: white;
+  top: 5px;
+  right: 20px;
+  width: 50px;
+  
 }
 
 /* Adding styles to the aside and filter form */
@@ -73,8 +54,11 @@ select {
   outline: none;
 }
 
+#table-area{
+  opacity: .8;
+}
 #table-area th {
-  text-align: center;
+    text-align: center;
 }
 
 #table-area th:first-child,
@@ -92,51 +76,31 @@ select {
 }
 
 /* The styles for the parallax */
-.hero {
-  position: relative;
-  height: 550px;
+.jumbotron {
+  position: relative;  
   padding: 20px;
   margin: 0;
-  background: black;
-  background-image: url("../images/nasa.jpg");
+  opacity: .8;  
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
 }
 
-.hero h1 {
-  margin-top: 200px;
+.jumbotron h1 {
+
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
+  color:chartreuse
 }
 
-.hero p {
+.jumbotron p {
   font-size: 2rem;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
 }
 
-/* input placeholder color changes */
-.form-control::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #8e979f;
-}
 
-.form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #8e979f;
-}
-
-.form-control:-ms-input-placeholder {
-  /* IE 10+ */
-  color: #8e979f;
-}
-
-.form-control:-moz-placeholder {
-  /* Firefox 18- */
-  color: #8e979f;
-}
 
 /* media queries which will only be activated at specific screen sizes */
 @media (max-width: 800px) {
@@ -186,9 +150,7 @@ select {
     content: attr(data-th);
   }
 
-  .hero h1 {
-    animation: smaller-title 1.2s forwards linear;
-  }
+  
 }
 
 /* keyframe animations which will be used to animate the title */
