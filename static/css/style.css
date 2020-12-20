@@ -15,7 +15,9 @@ body {
   background-size: cover;
 }
 
-
+label {
+  color:chartreuse;
+}
 
 
 
